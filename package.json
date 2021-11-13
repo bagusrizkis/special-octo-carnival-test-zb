@@ -1,0 +1,26 @@
+{
+  "name": "backend-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "NODE_OPTIONS=--experimental-vm-modules npx jest --detectOpenHandles --forceExit",
+    "dev": "nodemon --experimental-specifier-resolution=node ./src/rest/index.js",
+    "start": "node --experimental-specifier-resolution=node ./src/rest/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "jest": "^27.3.1",
+    "mongodb": "^4.1.4"
+  },
+  "devDependencies": {
+    "dotenv": "^10.0.0",
+    "faker": "^5.5.3",
+    "nodemon": "^2.0.15"
+  }
+}
